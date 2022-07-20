@@ -3,5 +3,10 @@
 
 <h1>Home page</h1>
 <p ><%= startingParagraf %></p>
+<% console.log(formContent); %>
+
+ <%formContent.forEach(function(formAll) { %>
+   <% console.log(formAll.title); %>
+ <% }); %>
 
 <%- include('partials/footer'); -%>
