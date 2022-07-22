@@ -1,0 +1,11 @@
+
+
+<%- include('partials/header'); -%>
+
+
+ <%formContent.forEach(function(formAll) { %>
+   <h1><%= formAll.title %></h1>
+   <p><%= formAll.content %></p>
+ <% }); %>
+
+<%- include('partials/footer'); -%>
