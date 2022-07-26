@@ -23,7 +23,10 @@ app.use(express.static("public"));
 
 app.get('/', (req, res) => {
 
-  res.render("home", {startingParagraf: homeStartingContent, formContent: formContent});
+  res.render("home", {
+    startingParagraf: homeStartingContent,
+    formContent: formContent
+  });
 
 });
 
@@ -58,7 +61,7 @@ formContent.forEach(function(formAll){
        postPageContent:postPageContent
      });
 
-  }
+  };
 
 });
 
